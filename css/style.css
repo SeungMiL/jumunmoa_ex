@@ -1,7 +1,11 @@
 @import url(reset.css);
 
 
-
+:root{
+    --font-color : rgb(58, 58, 58);
+    --font-bold : 800;
+    --font-medium : 600;
+}
 
 
 .sec_02_center_content {
@@ -25,7 +29,7 @@
 
 .sec_02_center_title{
     width: 100%;
-    height: 120px;
+    height: 130px;
     background: url(../images/pizza1.jpg) 50% 50% no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -43,11 +47,12 @@
     box-shadow: inset 0px 0px 2px 0.5px rgba(0,0,0, 0.3);
 }
 
-.main_title h5{
+.main_title h4{
     text-align: center;
     padding-top: 10px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     letter-spacing: 1px;
+    color: var(--font-color);
 }
 
 .evaluation{
@@ -89,24 +94,106 @@
     margin-left: -5px;
 }
 
+.menu_nav{
+    position: relative;
+    top: -15px;
+}
+
 .menu_nav ul{
     display: flex;
     white-space: nowrap;
+    border-bottom: 1px solid rgb(207, 207, 207);
 }
 
 .menu_nav ul li{
-    margin: 0 10px;
-}
-
-.menu_nav ul li a{
+    padding: 0 12px;
     font-size: 14px;
 }
 
-.active{
+
+.tab_button.active{
+    padding: 0;
+    margin: 0 12px;
     padding-bottom: 2px;
     border-bottom: 3px solid black;
 }
 
 .tab_button{
     cursor: pointer;
+    display: block;
 }
+
+
+.tab_content{
+    display: none;
+
+}
+
+.tab_content.show{
+    display: block;
+}
+
+.title_wrap{
+    width: 100%;
+    height: 130px;
+    border-top: 3px double rgb(207, 207, 207);
+    border-bottom: 1px double rgb(207, 207, 207);
+    /* padding: 50px; */
+}
+
+.menu_wrap{
+    float: left;
+    width: 65%;
+    box-sizing: border-box;
+}
+
+.menu_img_wrap{
+    float: right;
+    margin-top: 28px;
+    box-sizing: border-box;
+    width: 34%;
+}
+
+.title_memu{
+    padding: 10px 15px;
+}
+
+.menu_nav ul.menu_list{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 8px 0;
+    margin: 0;
+    border: none;
+}
+
+.menu_nav ul li.best{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 10px 0 0px 10px;
+    border: 1px solid orange;
+    color: rgb(255, 70, 70);
+    font-size: 10px;
+    font-weight: var(--font-medium)
+}
+
+.menu_nav ul li.menu_title{
+    color: var(--font-color);
+    font-weight: var(--font-medium);
+    margin-top: 4px;
+}
+
+.menu_nav ul li.menu_price{
+    margin-top: 4px;
+}
+
+.menu_nav ul li.menu_discription{
+    white-space: normal;
+    font-size: 10px;
+    margin-top: 4px;
+    
+}
+
