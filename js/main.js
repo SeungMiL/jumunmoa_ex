@@ -18,3 +18,9 @@ function openTab(i) {
     $('.tab_content').eq(i).addClass('show');
 }
 
+
+$('.menu_btn').click(function(){
+    if(!false){
+        $('.pay_btn').fadeToggle('play');
+    }
+})
