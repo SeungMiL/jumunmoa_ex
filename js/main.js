@@ -24,3 +24,14 @@ $('.menu_btn').click(function(){
         $('.pay_btn').fadeToggle('play');
     }
 })
+
+
+// $('.btn1').click(function(){
+//     $.ajax({
+//         type: "get",
+//         url : "/jumun.html",
+//         data : "",
+//         dataType : "html"
+        
+//     })
+// })

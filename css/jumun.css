@@ -1,0 +1,89 @@
+@import url(reset.css);
+
+
+:root{
+    --font-color : rgb(58, 58, 58);
+    --font-bold : 800;
+    --font-medium : 600;
+    --border-color : rgb(207, 207, 207);
+}
+
+input[type='radio'],
+input[type='radio']:checked
+{
+   appearance: none;
+   width: 1.2rem;
+   height: 1.2rem;
+   border-radius: 100%;
+   transform: translateY(5px);
+   box-sizing: border-box;
+   border: 2px solid var(--border-color);
+}
+
+input[type='radio']{
+    background-color: white;
+}
+
+input[type='radio']:checked{
+    border: 5px solid orange;
+}
+
+
+
+
+
+
+.sec_02_center_description_wrap h3{
+    text-align: center;
+    margin: 15px 0;
+    font-weight: var(--font-bold);
+    color: var(--font-color);
+}
+
+.menu_wrap{
+    width: 100%;
+    box-sizing: border-box;
+    word-break: keep-all;
+    font-size: 14px;
+    
+}
+
+.menu_wrap h4{
+    padding: 10px 0 10px 14px;
+    font-weight: var(--font-medium);
+    color: var(--font-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.delivery{
+    padding: 12px 0 0px 14px;
+    line-height: 0.4;
+}
+
+.delivery span{
+    padding: 0 0 0 26px;
+    font-size: 10px;
+}
+
+.delivery input{
+    margin: 0 6px 0 0;
+}
+
+.pack{
+    padding: 16px 0 0px 14px;
+    line-height: 0.4;
+
+}
+
+.pack input{
+    margin: 0 6px 0 0;
+}
+
+
+.pack span{
+    padding: 0 0 0 26px;
+    font-size: 10px;
+}
+/* .menu_list{
+    padding: 10px 0 10px 16px;
+} */
